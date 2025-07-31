@@ -185,6 +185,12 @@ launch-wb-g1-dummy-sim:
 	source install/setup.bash && \
 	ros2 launch g1_wb_mpc wb_dummy_sim.launch.py 
 
+launch-m1a-2v1-vin-dummy-sim:
+	cd ${build_dir} && \
+	source ${ros_source_file} && \
+	source install/setup.bash && \
+	ros2 launch m1a_2v1_centroidal_mpc dummy_sim.launch.py 
+
 launch-wb-m1a-2v1-vin-dummy-sim:
 	cd ${build_dir} && \
 	source ${ros_source_file} && \
